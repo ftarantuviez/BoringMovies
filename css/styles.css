@@ -1,0 +1,233 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #8F57FD;
+    font-family: 'Muli', sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    
+}
+a:hover{
+    text-decoration: underline;
+}
+.icon-google-plus:hover{
+    color: #d34836;
+}
+.icon-twitter:hover{
+    color: #1da1f2;
+}
+.header{
+    background-color: #8F57FD;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__images{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.header__image{
+    width: 200px;
+    height: 80%;
+}
+.header__menu{
+    margin-right: 30px ;
+    position: relative;
+}
+.header__list{
+    top: 55px;
+    height: 90px;
+    margin: 0;
+    
+}
+.header__menu ul{
+    display: none;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    text-align: center;
+    
+}
+.header__menu ul li{
+    margin: 10px 0px;
+}
+.header__menu ul li a:hover{
+    text-decoration: underline;
+}
+.header__menu:hover ul, ul:hover{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.header__menu--profile{
+    margin-right: 8px;
+    display: flex;
+    margin-right: 60px;
+}
+.header__menu--cercle{
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    border: 1px solid white;
+    overflow: hidden;
+    position: relative;
+    margin-right: 20px;
+}
+.header__img--profile{
+    width: 100%;
+    height: 95%;
+    position: absolute;
+    bottom: 0;
+    
+}
+.header__profile--text{
+    margin: 0;
+}
+
+
+.main{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main__title{
+    color: white;
+    font-size: 25px;
+}
+.input{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 35px;
+    color: white;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    height: 50px;
+    padding: 0px 20px;
+    width: 70%;
+    outline: none;
+    
+}
+.input:active{
+    outline: none;
+}
+::placeholder{
+    color: white;
+}
+
+
+
+.carousel{
+    width: 100%;
+    overflow-x: scroll;
+    padding: 30px;
+    padding-bottom: 0;
+    position: relative;
+}
+.carousel__container{
+    white-space: nowrap;
+    margin: 70px 0px;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+}
+.carousel-item{
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    
+    overflow: hidden;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center;
+    position: relative;
+}
+.carousel-item:hover ~ .carousel-item{
+    transform: translate3d(100px, 0, 0);
+    
+}
+.carousel__container:hover .carousel-item{
+    opacity: 0.3;
+}
+.carousel__container:hover .carousel-item:hover{
+    transform: scale(1.5);
+    opacity: 1;
+}
+.carousel-item__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel-item__description-container{
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    opacity: 0;
+    height: 100%;
+    transition: opacity .5s;
+    will-change: opacity;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.carousel-item__description-container:hover{
+    opacity: 1;
+}
+.play-button{
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 0;
+}
+.plus-button{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0;
+}
+.plus-button:hover, .play-button:hover{
+    box-shadow: 2px 2px 20px rgba(255, 255, 255, 0.7);
+}
+.description__paragraph{
+    margin: 0;
+}
+.description__title{
+    margin: 0;   
+}
+.carousel::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+
+.carousel::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+.carousel::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+.carousel::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+.division__item-h3{
+    margin-left: 30px;
+    font-size: 30px;
+}
+
