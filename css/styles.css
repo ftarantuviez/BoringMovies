@@ -15,10 +15,13 @@ a{
 a:hover{
     text-decoration: underline;
 }
-.icon-google-plus:hover{
+.icon-google-plus, .icon-twitter, .Google, .Twitter{
+    transition: color .5s;
+}
+.icon-google-plus:hover ~ .Google, .icon-google-plus:hover{
     color: #d34836;
 }
-.icon-twitter:hover{
+.icon-twitter:hover ~ .Twitter, .icon-twitter:hover{
     color: #1da1f2;
 }
 .header{
@@ -231,3 +234,6 @@ a:hover{
     font-size: 30px;
 }
 
+.logout-body{
+    background: linear-gradient(to top, #F9E79F, #D4AC0D);
+}

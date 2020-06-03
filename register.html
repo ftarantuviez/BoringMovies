@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styles2.css">
 </head>
-<body>
+<body class="logout-body">
     <header class="header--login">
         <div class="header__images">
             <img src="images/untitled (5).png" class="header__image" alt="">
@@ -17,11 +17,11 @@
     <section class="login">
         <section class="login__container">
             <h2>Log Out</h2>
-            <form action="" class="login__container--form">
-                <input placeholder="Name" type="text" class="input-login">
-                <input placeholder="Email" type="text" class="input-login">
-                <input placeholder="Password" type="password" class="input-login">
-                <button class="button">
+            <form action="" class="login__container--form" id="logout-form">
+                <input placeholder="Name" type="text" class="input-login" id="logout-name">
+                <input placeholder="Email" type="text" class="input-login" id="logout-email">
+                <input placeholder="Password" type="password" class="input-login" id="logout-password">
+                <button class="button" id="logout-button">
                     Log Out
                 </button>
     
@@ -29,8 +29,8 @@
 
             </form>
             <section class="login__container--social-media">
-               <div> <i class="icon-google-plus"></i><a>Log Out with Google</a></div>
-                <div> <i class="icon-twitter"></i><a>Log Out with Twitter</a> </div>
+               <div> <i class="icon-google-plus"></i><a class="Google">Log Out with Google</a></div>
+                <div> <i class="icon-twitter"></i><a class="Twitter">Log Out with Twitter</a> </div>
             </section>
 
             <section class="login__container--register-logout">
@@ -44,5 +44,6 @@
         <a href="">Privacity</a>
         <a href="">Help center</a>
     </footer>
+    <script src="script/logout.js"></script>
 </body>
 </html>

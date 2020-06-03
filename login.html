@@ -17,10 +17,10 @@
     <section class="login">
         <section class="login__container">
             <h2>Log in</h2>
-            <form action="" class="login__container--form">
-                <input placeholder="Email" type="text" class="input-login">
-                <input placeholder="Password" type="password" class="input-login">
-                <button class="button">
+            <form action="" class="login__container--form" id="login-form">
+                <input placeholder="Email" type="text" class="input-login" id="login-email">
+                <input placeholder="Password" type="password" class="input-login" id="login-password">
+                <button class="button" id="login-button">
                     Log In
                 </button>
                 <div class="login__container--remember-me">
@@ -33,10 +33,10 @@
 
             </form>
             <section class="login__container--social-media">
-               <div><i class="icon-google-plus"></i><a>Log in with Google</a></div>
-                <div> <i class="icon-twitter"></i><a>Log in with Twitter</a> </div>
+               <div><i class="icon-google-plus"></i><a class="Google">Log in with Google</a></div>
+                <div> <i class="icon-twitter"></i><a class="Twitter">Log in with Twitter</a> </div>
             </section>
-            <p class="login__container--register">You don't have any account <strong><i><a href=""> log out</a></i></strong></p>
+            <p class="login__container--register">You don't have any account <strong><i><a href="register.html"> log out</a></i></strong></p>
         </section>
     </section>
     <footer class="footer">
@@ -44,5 +44,7 @@
         <a href="">Privacity</a>
         <a href="">Help center</a>
     </footer>
+    <script src="script/index.js"></script>
+
 </body>
 </html>
